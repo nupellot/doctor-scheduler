@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    height: 65px;
+}
+
+.header__long-line {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /*filter: blur(10px);*/
+    background: rgba(255, 255, 255, 0.49);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.34);
+}
+
+.header__short-line {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+
+
