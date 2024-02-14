@@ -1,0 +1,16 @@
+.editor-form {
+    margin-top: 10px;
+}
+
+.editor-form__row {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.editor-form__input {
+    border: 1px solid rgba(128, 128, 128, 0.73);
+    border-radius: 5px;
+    padding: 4px;
+    max-width: 300px;
+}
