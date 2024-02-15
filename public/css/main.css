@@ -21,8 +21,35 @@ h1 {
     font-weight: bold;
 }
 
-input {
-    background: transparent;
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
+input {
+    background: transparent;
+    border: none;
+}
 
+.button {
+    padding: 3px 9px 3px 9px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: black;
+    font-weight: bold;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.submit-button {
+    background: #14af14;
+    color: white;
+}
+
+.cancel-button {
+    background: #ec0808;
+    color: white;
+}

@@ -5,12 +5,28 @@
 .editor-form__row {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 200px 500px;
 }
 
 .editor-form__input {
     border: 1px solid rgba(128, 128, 128, 0.73);
     border-radius: 5px;
-    padding: 4px;
+    padding: 3px 8px 3px 8px;
     max-width: 300px;
 }
+
+.editor-form__button {
+    width: 185px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    transition: 0.2s ease-out;
+    /*font-weight: bold;*/
+}
+
+.editor-form__button:hover {
+    box-shadow: rgba(64, 64, 64, 0.73) 2px 2px 2px;
+    color: white;
+    transform: scale(102%);
+}
+
