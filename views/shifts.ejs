@@ -1,22 +1,30 @@
-<%- include("_header") -%>
+<%- include("base") -%>
 
-  <h1 style="margin: 20px; text-align: center;">Список смен</h1>
+<%- include("header") -%>
 
-  <a class="btn btn-sm btn-success" href="/create">Добавить смену</a>
-  <div class="table-container">
-    <% for (const shift of model) { %>
-      <div class="card-container">
-        <p>
-          Дата: <%= shift.date %>
-        </p>
-        <p>
-          Сложность: <%= shift.difficulty %>
-        </p>
-        <a class="btn btn-sm btn-warning" href="/edit/<%= shift.id %>">Изменить</a>
-        <form action="/delete/<%=shift.id%>" method="post">
-          <input type="submit" class="btn btn-sm btn-danger" value="Удалить"></input>
-          <input type="hidden" name="" value="<%=shift.date%>">
-        </form>
-      </div>
-      <% } %>
-  </div>
+<link rel="stylesheet" href="css/shifts.css">
+
+<div class="content">
+
+    <h1 class="">Список смен</h1>
+    <a class="add-shift bubble" href="/create">+ Добавить смену</a>
+
+    <div class="shift-list">
+        <% for (const shift of model) { %>
+            <div class="shift bubble">
+                <div class="shift-info">
+                    <div class="date"><%= shift.formatted_date %></div>
+                    <div class="difficulty">Сложность: <%= shift.difficulty %></div>
+                </div>
+
+                <div class="shift__buttons">
+                    <a class="shift__change-button shift__button bubble" href="/edit/<%= shift.id %>">Изменить</a>
+                    <form action="/delete/<%= shift.id %>" method="post" class="delete-form">
+                        <input type="submit" class="shift__delete-button shift__button bubble" value="Удалить">
+                        <input type="hidden" name="" value="<%= shift.date %>">
+                    </form>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>

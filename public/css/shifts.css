@@ -1,0 +1,76 @@
+.add-shift {
+    margin: 20px 0 10px 0;
+    border-radius: inherit;
+    font-size: 0.8rem;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    width: 150px;
+    font-weight: bold;
+    display: block;
+    background: rgba(255, 255, 255, 0.83);
+    border: 1px solid rgba(0, 72, 255, 0.99);
+    transition: .1s ease-in;
+}
+
+.shift-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*grid-auto-flow: column;*/
+    grid-gap: 15px;
+    border-radius: inherit;
+}
+
+.shift {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: inherit;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.34);
+    background: rgba(255, 255, 255, 0.75);
+    padding: 15px;
+    box-shadow: rgba(128, 128, 128, 0.36) 3px 3px 3px;
+    transition: .1s ease-in;
+}
+
+.shift-info {
+    border-radius: inherit;
+}
+
+.shift__buttons {
+    display: flex;
+    border-radius: inherit;
+    grid-gap: 5px;
+}
+
+
+.shift__button {
+    border-radius: inherit;
+    color: black;
+    font-size: 0.7rem;
+    padding: 5px 10px 5px 10px;
+    transition: .1s ease-out;
+    font-weight: bold;
+    display: block;
+}
+
+.delete-form {
+    flex: 1;
+    border-radius: inherit;
+    display: block;
+}
+
+.shift__change-button {
+    background: green;
+    color: white;
+    flex: 3;
+}
+
+.shift__change-button:hover {
+    color: white;
+}
+
+.shift__delete-button {
+    background: red;
+    color: white;
+}

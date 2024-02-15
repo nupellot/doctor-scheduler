@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+
 body {
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, rgba(255, 0, 0, 0.11), rgba(0, 0, 255, 0.19));
+    font-family: "Montserrat", sans-serif;
 }
 
 .content {
+    font-weight: bold;
     width: 65%;
     margin: auto;
     background: rgba(255, 255, 255, 0.82);
@@ -52,4 +56,9 @@ input {
 .cancel-button {
     background: #ec0808;
     color: white;
+}
+
+.bubble:hover {
+    transform: scale(101%);
+    box-shadow: rgba(128, 128, 128, 0.52) 3px 3px 3px;
 }

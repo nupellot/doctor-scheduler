@@ -111,7 +111,7 @@ app.post("/create", (req, res) => {
 // Обработка GET-запроса для страницы со списком смен
 app.get("/shifts", (req, res) => {
     // SQL-запрос для выборки данных о сменах из базы данных
-    const sql = "SELECT id, procedures, difficulty, strftime('%d.%m.%Y', date) as date FROM shifts ORDER BY date";
+    const sql = "SELECT id, procedures, difficulty, strftime('%d.%m.%Y', date) as formatted_date FROM shifts ORDER BY date";
 
     // Выполнение запроса
     db.all(sql, [], (err, rows) => {
